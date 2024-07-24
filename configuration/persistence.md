@@ -342,7 +342,7 @@ Here are some examples:
 Lights.changedSince(now.minusMinutes(2).minusSeconds(30))
 Temperature.maximumSince(now.truncatedTo(ChronoUnit.DAYS))
 Temperature.minimumSince(parse("2012-01-01"))
-PowerMeter.historicState(now.truncatedTo(ChronoUnit.DAYS).withDayOfMonth(1))
+PowerMeter.historicState(now.truncatedTo(ChronoUnit.DAYS).withDayOfMonth(1)) // outdated, isn't it?
 ```
 
 The "now" variable can be used for relative time expressions, while "parse()" can define absolute dates and times.
